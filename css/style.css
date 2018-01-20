@@ -4,7 +4,7 @@ html {
 }
 
 
-/* Header and Logo */
+/* Header and Navigation */
 header {
   height: 4rem;
   width: 100%;
@@ -51,4 +51,43 @@ nav a {
   color: #595959;
   font-size: 1rem;
   font-weight: bold;
+}
+
+/* Feature Banner */
+
+.feature {
+  display: inline-flex;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: #cccccc;
+  margin-top: 4rem;
+  height: 30rem;
+}
+
+.banner img {
+  width: 70%;
+  padding-top: 3rem;
+  padding-bottom: 2.5rem;
+
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+}
+
+.feature-button {
+  margin: auto 0;
+}
+
+.button {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.button a {
+  background-color: #4d4d4d;
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1rem;
 }
