@@ -1,0 +1,54 @@
+/* Universal Styles */
+html {
+  font-size: 16px;
+}
+
+
+/* Header and Logo */
+header {
+  height: 4rem;
+  width: 100%;
+  background-color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #8686ac;
+  position: fixed;
+  padding-right: 1.5rem;
+}
+
+header span {
+  font-size: 2rem;
+
+}
+
+.black {
+  color: black;
+  font-weight: bold;
+}
+
+.gray {
+  color: #a4a4c1;
+}
+
+.logo {
+  height: 2rem;
+  padding-left: 1.5rem;
+}
+
+nav  {
+  display: inline;
+
+}
+
+nav li {
+  display: inline;
+  padding-right: 2rem;
+
+}
+
+nav a {
+  color: #595959;
+  font-size: 1rem;
+  font-weight: bold;
+}
