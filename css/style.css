@@ -91,3 +91,57 @@ nav a {
   color: white;
   padding: 0.5rem 1rem;
 }
+
+/* Main Content Section 1 */
+
+.maincontent1 {
+  padding-left: 1.5rem;
+  display: flex;
+  height: 50rem;
+}
+
+.feature-article {
+  padding-top: 2rem;
+  padding-right: 1.5rem;
+  width: 60%;
+  border-right: 1px solid #d9d9d9;
+}
+
+.feature-article img {
+  width: 85%;
+  height: auto;
+}
+
+.feature-article h1 {
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+.feature-article h2 {
+  line-height: 1.4;
+}
+
+.feature-article h3 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.article-headlines {
+  padding-top: 2rem;
+}
+
+.orientation,
+.campus,
+.guest {
+  display: flex;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 1rem;
+}
+
+.readmore {
+  padding-left: 1rem;
+}
+
+.readmore a {
+  text-decoration: none;
+}
