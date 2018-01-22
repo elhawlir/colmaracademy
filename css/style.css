@@ -222,3 +222,18 @@ nav a {
 }
 
 /* Footer */
+
+footer {
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.privacyterms {
+  text-align: right;
+}
+
+footer a {
+  text-decoration: none;
+  color: #b3b3cc;
+}
