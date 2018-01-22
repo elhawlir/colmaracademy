@@ -97,7 +97,7 @@ nav a {
 .maincontent1 {
   padding-left: 1.5rem;
   display: flex;
-  height: 50rem;
+  height: 59.2rem;
 }
 
 .feature-article {
@@ -105,6 +105,7 @@ nav a {
   padding-right: 1.5rem;
   width: 60%;
   border-right: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .feature-article img {
@@ -128,6 +129,7 @@ nav a {
 
 .article-headlines {
   padding-top: 2rem;
+
 }
 
 .orientation,
@@ -144,4 +146,42 @@ nav a {
 
 .readmore a {
   text-decoration: none;
+}
+
+/* Main Content Section 2 */
+
+.maincontent2 {
+  padding: 2rem 4.5rem;
+  background-color: #e6e6e6;
+}
+
+.maincontent2 h1 {
+  text-align: center;
+
+}
+
+.course-tabs {
+  padding-top: 2rem;
+}
+
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.course {
+  background-color: white;
+  margin-bottom: 2rem;
+  width: 30%;
+}
+
+.course img {
+  width: 100%;
+  height: auto;
+
+}
+
+.course-info {
+  padding: 0.5rem 1rem;
 }
