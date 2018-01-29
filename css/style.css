@@ -8,26 +8,27 @@ html {
 header {
   height: 4rem;
   width: 100%;
-  background-color: #ffffff;
-  display: inline-flex;
-  align-items: center;
+  display: flex;
   justify-content: space-between;
+  background-color: #ffffff;
   border-bottom: 1px solid #8686ac;
   position: fixed;
   padding-right: 1.5rem;
 }
 
-header span {
-  font-size: 2rem;
-
+.title {
+  display: flex;
+  align-items: center;
 }
 
 .black {
+  font-size: 2rem;
   color: black;
   font-weight: bold;
 }
 
 .gray {
+  font-size: 2rem;
   color: #a4a4c1;
 }
 
@@ -36,9 +37,35 @@ header span {
   padding-left: 1.5rem;
 }
 
+@media only screen and (max-width: 480px) {
+  .black,
+  .gray,
+  nav,
+  ul {
+    display: none;
+  }
+
+.logo,
+.images {
+  display: inline;
+}
+
+.title {
+  width: 480px;
+  display: flex;
+  justify-content: space-between;
+}
+
+}
+
+@media only screen and (min-width: 480px) {
+  .images {
+    display: none;
+  }
+}
+
 nav  {
   display: inline;
-
 }
 
 nav li {
@@ -56,28 +83,43 @@ nav a {
 /* Feature Banner */
 
 .feature {
-  display: inline-flex;
   padding-left: 2rem;
   padding-right: 2rem;
   background-color: #cccccc;
-  margin-top: 4rem;
-  height: 30rem;
+  padding-top: 4rem;
+}
+
+.feature-banner {
+  display: flex;
+}
+
+@media only screen and (max-width: 480px) {
+  .feature,
+  .feature-banner {
+    display: block;
+  }
+
+  .feature-banner {
+    
+  }
+
+
 }
 
 .banner img {
-  width: 70%;
+  width: 100%;
   padding-top: 3rem;
-  padding-bottom: 2.5rem;
 
 }
 
 .banner {
-  display: flex;
-  justify-content: center;
+  width: 60%;
+  padding-right: 2rem;
 }
 
 .feature-button {
   margin: auto 0;
+  text-align: center;
 }
 
 .button {
@@ -118,13 +160,13 @@ nav a {
   padding-bottom: 1.5rem;
 }
 
-.feature-article h2 {
-  line-height: 1.4;
+.exp {
+  font-size: 1.5rem;
 }
 
-.feature-article h3 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+.lastline {
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .article-headlines {
@@ -231,6 +273,9 @@ footer {
 
 .privacyterms {
   text-align: right;
+  width: 7rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 footer a {
