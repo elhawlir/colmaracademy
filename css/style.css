@@ -336,14 +336,37 @@ html {
 }
 
 .maincontent3 h1 {
+  font-size: 2rem;
+  font-weight: bold;
   text-align: center;
 }
 
 @media only screen and (max-width: 480px) {
-  
+  .vid video {
+    display: none;
+  }
+  .description-video,
+  .promos {
+    display: none;
+  }
+  .mobile-vid {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .vid-mobile {
+    width: 480px;
+  }
+  .vid-mobile video {
+    width: 60%;
+  }
+
 }
 
 @media only screen and (min-width: 480px) {
+  .vid-mobile video {
+    display: none;
+  }
 
 }
 
@@ -375,6 +398,16 @@ footer {
   padding: 1rem 1.5rem;
   display: flex;
   justify-content: space-between;
+}
+
+@media only screen and (max-width: 480px) {
+  footer span {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
+  .disappear {
+    display: none;
+  }
 }
 
 .privacyterms {
