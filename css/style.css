@@ -59,20 +59,22 @@ html {
   }
 }
 
-.main-nav  {
-  display: inline;
-}
-
-.main-nav li {
+nav li {
   display: inline;
   padding-right: 2rem;
 
 }
 
-.main-nav a {
+nav a {
+  text-decoration: none;
   color: #595959;
   font-size: 1rem;
   font-weight: bold;
+  transition: text-decoration 200ms linear 200ms;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
 
 /* Feature Banner */
@@ -160,6 +162,7 @@ html {
   text-decoration: none;
   color: white;
   padding: 0.5rem 1rem;
+  border-radius: 25px;
 }
 
 /* Main Content Section 1 */
@@ -174,8 +177,6 @@ html {
   padding-top: 2rem;
   padding-right: 1.5rem;
   width: 60%;
-  border-right: 1px solid #d9d9d9;
-  border-bottom: 1px solid #d9d9d9;
 }
 
 @media only screen and (max-width: 480px) {
@@ -234,7 +235,6 @@ html {
 
 .thumbnail {
   display: flex;
-  border-bottom: 1px solid #d9d9d9;
   padding: 1rem;
 }
 
@@ -258,6 +258,13 @@ html {
 
 .readmore a {
   color: #0000ff;
+  transition: font-weight 400ms ease-in,
+  text-decoration 200ms ease-out;
+}
+
+.readmore a:hover {
+  font-weight: bold;
+  text-decoration: none;
 }
 
 /* Main Content Section 2 */
@@ -300,6 +307,13 @@ html {
   }
 }
 
+.course-info h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.course-info p {
+  padding-top: 0.5rem;
+}
 .course-tabs {
   padding-top: 2rem;
 }
@@ -383,6 +397,12 @@ html {
   width: 100%;
 }
 
+.description h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
 .foreword {
   display: flex;
   padding: 1rem;
@@ -392,12 +412,21 @@ html {
   padding-left: 1rem;
 }
 
+.caption h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.caption p {
+  padding-top: 0.5rem;
+}
+
 /* Footer */
 
-footer {
-  padding: 1rem 1.5rem;
+.bottom {
   display: flex;
   justify-content: space-between;
+  padding: 1rem 1.5rem;
 }
 
 @media only screen and (max-width: 480px) {
@@ -420,4 +449,13 @@ footer {
 footer a {
   text-decoration: none;
   color: #b3b3cc;
+  transition: text-decoration 200ms ease 100ms,
+  color 200ms linear,
+  font-weight 200ms linear;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: black;
+  font-weight: bold;
 }
